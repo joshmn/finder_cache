@@ -1,0 +1,5 @@
+Strategy,IPS,Memsize (allocated),Memsize (retained),Objects (retained),Objects (retained)
+finder_cache,837076.362,3099,0,35,0
+identity_cache,11772.761,12139,2271,117,19
+memcached,13515.321,17730,456,152,5
+redis,12812.271,14860,0,130,0

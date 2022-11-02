@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/finder_cache/version'
+
+version = FinderCache::VERSION
+system('gem build finder_cache.gemspec')
+system("gem push finder_cache-#{version}.gem")
+system("rm finder_cache-#{version}.gem")
+system("git tag -a v#{version} -m 'version #{version}'")
+system("git push origin v#{version}")
